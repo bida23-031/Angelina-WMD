@@ -1,0 +1,308 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #0c65ea;
+     padding: 15px;
+     margin: 0%;
+    
+  }
+  .body{
+    background-color: white;
+  }
+  body {
+    background-color:white;
+  }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float:inherit;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    
+  }
+  
+  /* Add a color to the active/current link */
+  nav {
+    background-color: white;
+    color: white;
+  }
+  .search-box{
+   display:flex;
+   align-items:center;
+   Position:absolute;
+   top:0;
+   right:0;
+   margin-right:30px;
+   margin-top:40px;
+   }
+   .search-box label{
+    margin: right 10px;
+    color:white;
+    font-size:15px;}
+   
+   .search-box input[type=search]{
+    width:200px;
+    height:20px;
+    border-radius:5px;
+    border:none;
+    padding:10px;}
+    
+    .banner img{
+      width: 90%;
+      height: 30px;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .footer{
+      background-color:#0c65ea;
+      color: white;
+      width: 100%
+    }
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column{
+      float:left;
+      width:35px;
+    }
+    /* Clearfix (clear floats) */
+    .row::after{
+      content:"";
+      clear:both;
+      margin:table;
+    }    
+   .logo{
+    float: inline-start;
+    padding: 0.5%;
+   }
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: absolute;
+  width: 100%;
+}
+
+
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position:absolute;;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0c65ea;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.container .btn:hover {
+  background-color:#0c65ea;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.movie-posters{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,800fr));
+  grid-gap:10px;
+}
+.movie-poster{
+  text-align: center;
+}
+.movie-posters img{
+  width: 200%;
+  height:auto;
+  width:200px;
+  height:400PX;
+  border-radius:20px;
+}
+h2{
+  font-size:1.2em;
+  font-weight:bold;
+  margin-top:10px;
+  
+}
+.img{
+  width: 100px;
+  height: 70px;
+}
+.image-row {
+  /* Set the display of the image row to flex */
+  display: flex;
+
+  /* Set the justify content of the image row to space between */
+  justify-content: space-between;
+}
+
+.image-row img {
+  /* Set the width of the images to 15% of the container */
+  width:20%;
+
+  /* Set the height of the images to auto, maintaining the aspect ratio */
+  height: auto;
+}
+
+
+.movie-posters{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  grid-gap:20px;
+}
+.movie-poster{
+  text-align: center;
+}
+.movie-posters img{
+  width: 100%;
+  height:auto;
+  width:320px;
+  height:500px;
+  border-radius:15px;
+}
+h2{
+  font-size:1.2em;
+  font-weight:bold;
+  margin-top:10px;
+  
+}.btn{
+    background-color:#0c65ea;
+    color:white;
+    font-weight:300px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size:9px;
+  border: 1px solid grey;
+  float: inline-end;
+  width: 80%;
+  background: #f1f1f1;
+  margin-left:10px;
+  margin-top: -35px;
+  width:250px;
+  display: flex;
+}
+
+/* Style the submit button */
+form.examples button {
+  float: inline-end;
+  width: 20%;
+  background: #f7f8f9;
+  color: rgb(7, 7, 7);
+  font-size:9px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  width:70Px;
+  margin-top: -35px;
+  
+}
+
+form.examples button:hover {
+  background:#0c65ea;
+}
+
+/* Clear floats */
+form.examples:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color:black ;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color:#0c65ea;
+  color:white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color:#0c65ea;
+  color:black ;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  
+ 
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
